@@ -20,13 +20,31 @@
 </div>
 
 ---
-
+ 
 ## 🌟 项目简介
-
-**微境剧场** 是一款专为桌面级微缩场景打造的**具身智能 (Embodied Intelligence)** 协同演播系统。本项目作为百度飞桨 A01 赛题的深度实践，旨在通过多智能体协作，将纯文本脚本转化为包含“剧情理解、视觉资产生成、音频合成、实体控制”的完整闭环。
-
+ 
+**微境剧场** 是一款专为桌面级微缩场景打造的**具身智能 (Embodied Intelligence)** 协同演播系统。它旨在通过多智能体协作，将纯文本脚本转化为包含“剧情理解、视觉资产生成、音频合成、实体控制”的完整闭环。
+ 
 我们不仅在数字空间内构建了一个强大的内容流水线，更探索了 AI Agent 如何指挥实体机器人在物理边界内进行情感表达与群体协作，赋能数字展陈、智能玩具及沉浸式叙事等前沿领域。
-
+ 
+---
+ 
+## 🎬 演示视频与项目文档
+ 
+为了方便您快速了解微境剧场的架构设计与演绎效果，我们提供了以下演示视频与技术方案：
+ 
+* **演示视频**
+  * 💾 [百度网盘在线观看与下载 (提取码: 6666)](https://pan.baidu.com/s/1hLoS7G33E2w0WX9S-EYQlw?pwd=6666)
+  * 🎥 *本地播放*：若已克隆本仓库，可直接播放本地路径下的 [demo_video.mp4](./docs/contest/demo_video.mp4)。
+* **系统文档与幻灯片**
+  * 📄 [项目概要介绍 (PDF)](./docs/contest/project_summary.pdf) —— 核心设计亮点与系统概要概述。
+  * 📄 [项目详细方案 (PDF)](./docs/contest/project_proposal.pdf) —— 系统的完整技术设计与演进路线。
+  * 📊 [项目简介 PPT (PPTX)](./docs/contest/project_slides.pptx) —— 系统介绍与答辩演示幻灯片。
+* **深度技术参考**
+  * ⚙️ [产品使用说明 (PDF)](./docs/contest/enterprise_materials/system_architecture_and_workflow.pdf) —— 多智能体管线与前端交互说明。
+  * 🤖 [虚实部署与对比分析 (PDF)](./docs/contest/enterprise_materials/virtual_to_physical_deployment.pdf) —— 虚实映射、动作同步与硬件调试。
+  * 📝 [开发过程与训练记录 (PDF)](./docs/contest/enterprise_materials/development_process_and_training_records.pdf) —— 团队分工与模型微调记录。
+ 
 ---
 
 ## ✨ 核心特性
@@ -112,26 +130,6 @@ docker-compose up -d
 ```
 > [!TIP]
 > 配置文件和数据库已通过 `volumes` 映射到本地 `configs/` 和 `data/` 目录，容器重启不会丢失任何剧本素材。
-
----
-
-## 🏆 比赛成果与演示 (Tournament & Demo)
-
-本项目作为**百度飞桨A01赛题**的参赛成果，整理了相关的比赛辅助材料与文档供参考：
-
-### 📄 比赛申报与方案材料
-- [项目概要介绍 (PDF)](./docs/contest/project_summary.pdf) —— 核心设计亮点与系统概要概述。
-- [项目详细方案 (PDF)](./docs/contest/project_proposal.pdf) —— 系统的完整技术设计、演进路线与方案。
-- [项目简介 PPT (PPTX)](./docs/contest/project_slides.pptx) —— 用于答辩演示的系统介绍幻灯片。
-
-### 📁 深度企业材料
-- [产品使用说明文档 (系统架构与流程说明)](./docs/contest/enterprise_materials/system_architecture_and_workflow.pdf) —— 帮助理解多智能体演绎流水线与前端交互。
-- [虚拟到现实部署与对比分析](./docs/contest/enterprise_materials/virtual_to_physical_deployment.pdf) —— 记录虚实映射、动作同步机制与硬件调试。
-- [项目分工、开发过程与训练记录文档](./docs/contest/enterprise_materials/development_process_and_training_records.pdf) —— 团队协作与模型微调记录。
-
-### 🎬 演示视频
-- **在线观看与下载**：💾 [百度网盘分享 (提取码: 6666)](https://pan.baidu.com/s/1hLoS7G33E2w0WX9S-EYQlw?pwd=6666)
-- **本地播放**：项目演示视频（约 472MB）因文件体积较大已被 Git 忽略。若已克隆本仓库，可在本地路径 [docs/contest/demo_video.mp4](./docs/contest/demo_video.mp4) 直接播放。
 
 ---
 
