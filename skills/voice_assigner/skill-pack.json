@@ -1,0 +1,12 @@
+{
+  "version": 1,
+  "agent_type": "voice_assigner",
+  "pack_name": "角色音色分配技能包",
+  "load_order": [
+    "voice_assigner",
+    "voice_assigner/casting-rules"
+  ],
+  "defaults": {
+    "casting_mode": "character-fit"
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "agent_type": "storyboard_breaker",
+  "pack_name": "分镜拆解技能包",
+  "load_order": [
+    "storyboard_breaker",
+    "storyboard_breaker/shot-sequencing",
+    "storyboard_breaker/consistency-check"
+  ],
+  "defaults": {
+    "target_duration_seconds": 12
+  }
+}

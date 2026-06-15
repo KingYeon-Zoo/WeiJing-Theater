@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "agent_type": "extractor",
+  "pack_name": "角色场景提取技能包",
+  "load_order": [
+    "extractor",
+    "extractor/dedupe-rules",
+    "extractor/coverage-checklist"
+  ],
+  "defaults": {
+    "dedupe_mode": "strict"
+  }
+}

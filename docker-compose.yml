@@ -1,0 +1,12 @@
+services:
+  weijing-theater:
+    build: .
+    ports:
+      - "5679:5679"
+    volumes:
+      - ./data:/app/data
+      - ./configs:/app/configs
+    environment:
+      - NODE_ENV=production
+      - PORT=5679
+    restart: unless-stopped

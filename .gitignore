@@ -1,0 +1,73 @@
+# Dependencies
+node_modules/
+**/node_modules/
+
+# Build & Cache
+dist/
+.nuxt/
+.output/
+.nitro/
+.cache/
+tsc_output.txt
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.pytest_cache/
+
+# IDE & Editor files
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Environment & Secrets
+.env
+.env.local
+.env.*
+!.env.example
+
+# Logs
+*.log
+logs/
+
+# Databases (SQLite & others)
+*.db
+*.db-wal
+*.db-shm
+*.sqlite
+sqlite.db
+data/drama_generator.db*
+data/huobao_drama.db*
+data/weijing_drama.db*
+data/public.sql
+data/*.bak*
+data/static/
+data/storage/
+
+# Config
+configs/config.yaml
+
+# Media & Large Files (Prevent uploading huge demo videos or archives)
+*.mp4
+*.mov
+*.avi
+*.mkv
+*.zip
+*.tar.gz
+*.tar
+*.gz
+*.rar
+
+# Misc
+tmp/
+temp/
+.superpowers/
+/CLAUDE.md
+/AGENTS.md
+

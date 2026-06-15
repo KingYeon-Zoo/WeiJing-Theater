@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "agent_type": "grid_prompt_generator",
+  "pack_name": "图片提示词技能包",
+  "load_order": [
+    "grid_prompt_generator",
+    "grid_prompt_generator/character-scene-prompts",
+    "grid_prompt_generator/grid-layout-rules"
+  ],
+  "defaults": {
+    "prompt_language": "english"
+  }
+}

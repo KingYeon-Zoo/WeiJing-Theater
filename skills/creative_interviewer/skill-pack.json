@@ -1,0 +1,26 @@
+{
+  "version": 1,
+  "agent_type": "creative_interviewer",
+  "pack_name": "creative_interviewer",
+  "load_order": [
+    "creative_interviewer",
+    "creative_interviewer/genre-and-audience-lock",
+    "creative_interviewer/hook-and-premise-check",
+    "creative_interviewer/character-and-world-building",
+    "creative_interviewer/episode-outline-builder",
+    "creative_interviewer/script-draft-handoff",
+    "creative_interviewer/approval-gate"
+  ],
+  "defaults": {
+    "question_depth": "deep",
+    "output_template": "brief-outline-script",
+    "default_enabled_skills": [
+      "creative_interviewer/genre-and-audience-lock",
+      "creative_interviewer/hook-and-premise-check",
+      "creative_interviewer/character-and-world-building",
+      "creative_interviewer/episode-outline-builder",
+      "creative_interviewer/script-draft-handoff",
+      "creative_interviewer/approval-gate"
+    ]
+  }
+}

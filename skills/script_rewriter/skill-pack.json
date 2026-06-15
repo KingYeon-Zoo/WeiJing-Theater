@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "agent_type": "script_rewriter",
+  "pack_name": "剧本改写技能包",
+  "load_order": [
+    "script_rewriter",
+    "script_rewriter/screenplay-structure",
+    "script_rewriter/handoff-checklist"
+  ],
+  "defaults": {
+    "rewrite_mode": "screenplay-first"
+  }
+}
