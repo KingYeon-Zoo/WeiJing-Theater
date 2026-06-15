@@ -130,13 +130,8 @@ docker-compose up -d
 - [项目分工、开发过程与训练记录文档](./docs/contest/enterprise_materials/development_process_and_training_records.pdf) —— 团队协作与模型微调记录。
 
 ### 🎬 演示视频
-> [!IMPORTANT]
-> 项目演示视频（约 **472MB**）体积超出了 GitHub 单个文件 100MB 的上传限制，因此已被配置在 `.gitignore` 中忽略，无法同步到远程仓库。
-> 
-> * **本地播放**：如果您已克隆本仓库到本地，可在本地路径 **`docs/contest/demo_video.mp4`** 直接播放。
-> * **在线观看/下载**：
->   * 📺 [Bilibili 在线观看地址 (待上传填入)](#)
->   * 💾 [百度网盘备份下载 (待上传填入)](#)
+- **在线观看与下载**：💾 [百度网盘分享 (提取码: 6666)](https://pan.baidu.com/s/1hLoS7G33E2w0WX9S-EYQlw?pwd=6666)
+- **本地播放**：项目演示视频（约 472MB）因文件体积较大已被 Git 忽略。若已克隆本仓库，可在本地路径 [docs/contest/demo_video.mp4](./docs/contest/demo_video.mp4) 直接播放。
 
 ---
 
