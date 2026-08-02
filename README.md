@@ -1,3 +1,5 @@
+![微境剧场宣传海报](./docs/images/weijing-theater-poster.png)
+
 <div align="center">
   <img src="./frontend/public/weijing-logo.png" alt="Weijing Theater Logo" width="120" />
   <h1>🎭 微境剧场 (Weijing Theater)</h1>
@@ -9,10 +11,6 @@
     <img src="https://img.shields.io/badge/Frontend-Nuxt_3-00DC82?style=for-the-badge&logo=nuxt.js" alt="Nuxt 3" />
     <img src="https://img.shields.io/badge/Backend-Hono-E36002?style=for-the-badge&logo=hono" alt="Hono" />
   </div>
-
-  <br />
-
-  ![Weijing Theater Hero](./docs/images/hero.png)
 
   <p align="center">
     <i>“让 AI 走出屏幕，在方寸桌面上演人生百态。”</i>
