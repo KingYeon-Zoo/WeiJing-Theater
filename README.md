@@ -1,139 +1,112 @@
-<div align="center">
-  <img src="./frontend/public/weijing-logo.png" alt="Weijing Theater Logo" width="120" />
-  <h1>🎭 微境剧场 (Weijing Theater)</h1>
-  <p><b>基于百度飞桨与文心大模型的桌面微缩剧场多智能体协同演绎系统</b></p>
+<p align="center">
+  <img src="frontend/public/weijing-logo.png" width="100" alt="微境剧场" />
+</p>
 
-  <div>
-    <img src="https://img.shields.io/badge/AI-文心一言-blue?style=for-the-badge&logo=baidu" alt="Ernie Bot" />
-    <img src="https://img.shields.io/badge/Framework-Mastra-FF6B6B?style=for-the-badge" alt="Mastra" />
-    <img src="https://img.shields.io/badge/Frontend-Nuxt_3-00DC82?style=for-the-badge&logo=nuxt.js" alt="Nuxt 3" />
-    <img src="https://img.shields.io/badge/Backend-Hono-E36002?style=for-the-badge&logo=hono" alt="Hono" />
-  </div>
+# 微境剧场 · WeiJing Theater
 
-  <br />
+**把一句创意整理成剧本、角色、场景和结构化分镜，为短剧创作与实体机器人表演准备内容。**
 
-  ![Weijing Theater Hero](./docs/images/hero.png)
+创作者先与访谈 Agent 一起明确人物、冲突和剧情结构，再确认创作草稿。后续 Agent 分阶段处理剧本、角色场景、分镜和配音，每一步的结果都能在工作台中查看与修改。
 
-  <p align="center">
-    <i>“让 AI 走出屏幕，在方寸桌面上演人生百态。”</i>
-  </p>
-</div>
+<p align="center">
+  <img src="docs/showcase/storyboard-workspace.png" width="100%" alt="实际工作台：分镜序列、角色绑定与镜头属性编辑" />
+</p>
 
----
- 
-## 🌟 项目简介
- 
-**微境剧场** 是一款专为桌面级微缩场景打造的**具身智能 (Embodied Intelligence)** 协同演播系统。它旨在通过多智能体协作，将纯文本脚本转化为包含“剧情理解、视觉资产生成、音频合成、实体控制”的完整闭环。
- 
-我们不仅在数字空间内构建了一个强大的内容流水线，更探索了 AI Agent 如何指挥实体机器人在物理边界内进行情感表达与群体协作，赋能数字展陈、智能玩具及沉浸式叙事等前沿领域。
- 
----
- 
-## 🎬 演示视频与项目文档
- 
-为了方便您快速了解微境剧场的架构设计与演绎效果，我们提供了以下演示视频与技术方案：
- 
-* **演示视频**
-  * 💾 [百度网盘在线观看与下载 (提取码: 6666)](https://pan.baidu.com/s/1hLoS7G33E2w0WX9S-EYQlw?pwd=6666)
-  * 🎥 *本地播放*：若已克隆本仓库，可直接播放本地路径下的 [demo_video.mp4](./docs/contest/demo_video.mp4)。
-* **系统文档与幻灯片**
-  * 📄 [项目概要介绍 (PDF)](./docs/contest/project_summary.pdf) —— 核心设计亮点与系统概要概述。
-  * 📄 [项目详细方案 (PDF)](./docs/contest/project_proposal.pdf) —— 系统的完整技术设计与演进路线。
-  * 📊 [项目简介 PPT (PPTX)](./docs/contest/project_slides.pptx) —— 系统介绍与答辩演示幻灯片。
-* **深度技术参考**
-  * ⚙️ [产品使用说明 (PDF)](./docs/contest/enterprise_materials/system_architecture_and_workflow.pdf) —— 多智能体管线与前端交互说明。
-  * 🤖 [虚实部署与对比分析 (PDF)](./docs/contest/enterprise_materials/virtual_to_physical_deployment.pdf) —— 虚实映射、动作同步与硬件调试。
-  * 📝 [开发过程与训练记录 (PDF)](./docs/contest/enterprise_materials/development_process_and_training_records.pdf) —— 团队分工与模型微调记录。
- 
----
+[项目演示（提取码 6666）](https://pan.baidu.com/s/1hLoS7G33E2w0WX9S-EYQlw?pwd=6666) · [项目方案](docs/contest/project_proposal.pdf) · [核心设计](#核心设计) · [本地运行](#本地运行)
 
-## ✨ 核心特性
+## 从创意到表演素材
 
-| 🚀 自动化管线 | 🤖 多智能体协作 | 🎨 极简美学 | 📦 全方位生态 |
-| :--- | :--- | :--- | :--- |
-| 从原始文本到分镜图像与配音的**端到端生成**，仅需输入一个创意点。 | 内置 5 大职能 Agent，基于 **Mastra** 框架实现任务自治与复杂调度。 | 深度参考 **Figma 设计语言**，纯黑白高阶感 UI，将视觉中心留给创意内容。 | 支持 OpenAI, Gemini, MiniMax 等多模型热切换，采用 **SQLite + Drizzle** 极简架构。 |
+<table>
+  <tr>
+    <td width="50%"><img src="docs/showcase/creative-brief.png" alt="创作访谈：结构化草稿与提交定稿入口" /></td>
+    <td width="50%"><img src="docs/showcase/voice-workspace.png" alt="配音工作台：逐条生成、播放和检查台词音频" /></td>
+  </tr>
+  <tr>
+    <td align="center">对话补齐创作规范，确认后定稿</td>
+    <td align="center">按分镜组织配音，逐项检查产物</td>
+  </tr>
+</table>
 
----
+工作台保留中间产物：人物设定、世界观、分集大纲、剧本、分镜与音频。创作意图需要调整时，可以回到对应阶段修改，再继续生成后续内容。
 
-## 🧠 多智能体架构 (Agent Orchestration)
+<details>
+<summary>查看团队实体演示</summary>
 
-基于 `Mastra` 框架，系统将复杂的创作过程拆解为五个核心决策节点，每个 Agent 各司其职却又连贯协作：
+<p align="center">
+  <img src="docs/showcase/robot-demo.png" width="80%" alt="团队项目演示中的桌面机器人实物" />
+</p>
 
-1.  **✍️ 剧本改写 Agent (`script_rewriter`)**：将小说或灵感转化为标准剧本格式，包含动作描写与对白。
-2.  **🔍 特征提取 Agent (`extractor`)**：从剧本中智能去重并提取角色外貌、性格及场景氛围描述。
-3.  **🎬 分镜拆解 Agent (`storyboard_breaker`)**：细化每一个镜头的时间、景别、运镜及机位，确保演绎的连续性。
-4.  **🎙️ 音色指派 Agent (`voice_assigner`)**：根据角色设定，从音库中自动匹配最契合的角色配音。
-5.  **🖼️ 提示词调度 Agent (`grid_prompt_generator`)**：为 AI 生图引擎生成极具电影感和风格一致性的中英双语提示词。
+图片来自团队项目演示。整体项目探索从结构化创作内容到实体表演的衔接，本仓库主要提供创作工作台、Agent 工具与素材管理实现。相关背景见[虚实部署说明](docs/contest/enterprise_materials/virtual_to_physical_deployment.pdf)。
 
----
+</details>
 
-## 🏗️ 技术架构
+## 核心设计
 
-```mermaid
-graph LR
-    A[创意/剧本] --> B[Mastra Agents集群]
-    B -- 剧本理解 --> C(内容流水线)
-    
-    subgraph 内容流水线
-        C1[文生图: 电影级分镜]
-        C2[TTS: 情感语音合成]
-        C3[动作: 机器人指令集]
-    end
-    
-    C1 & C2 & C3 --> D[Web 工作台控制端]
-    D --> E[实体/仿真剧场执行]
-```
+### 先形成可修改的创作规范
 
-- **前端**: Nuxt 3 (SSR) + Vue 3，极致响应式交互方案。
-- **后端**: Hono Server，极轻量、类型安全的高并发 API。
-- **持久层**: Drizzle ORM + better-sqlite3，单文件持久化，零配置启动。
-- **扩展性**: 支持通过 `SKILL.md` (Natural Language Programming) 动态扩展 Agent 能力。
+访谈 Agent 维护创作简报、人物设定、世界观和分集大纲。对话阶段持续更新结构化草稿，创作者通过“提交定稿”进入后续创作流程。
 
----
+这样可以先检查人物与剧情是否符合意图，再投入后面的图像、分镜和配音生成。
 
-## 🚀 快速开始
+### 按阶段分配 Agent 与工具
 
-### 1. 环境准备
-确保您的机器已安装：
-- **Node.js** v20+
-- **npm** v9+
+剧本改写、角色场景提取、分镜拆解、提示词生成和配音分工处理。Skills 提供各阶段的工作约定，工具负责读写具体产物，前端展示阶段与结果。
 
-### 2. 获取与配置
-```bash
-git clone https://github.com/chatfire-AI/micro-stage.git
-cd micro-stage
+Skills 中的约定需要与工具实现配合：关键数据约束应在写入前检查，不能仅依赖提示词。
 
-# 配置 API Key (文心、OpenAI 等)
-cp configs/config.example.yaml configs/config.yaml
-```
+### 分镜引用需要属于当前集
 
-### 3. 开发环境启动
-系统采用双进程模式，推荐在两个终端分别运行：
+分镜包含镜头描述、时长、场景、角色和对白等字段。除 Zod 输入结构约束外，`validateStoryboardBindings` 会检查场景 ID 与角色 ID 是否属于当前集；错误引用在写入前被拒绝。
+
+这使分镜与已有角色、场景保持关联，也为后续素材生成和表演调度提供可检查的输入。
+
+## 代码导览
+
+| 模块 | 实现入口 |
+| --- | --- |
+| 创作访谈、草稿与定稿 | [creative.ts](backend/src/routes/creative.ts) |
+| Agent 配置与装配 | [agents/index.ts](backend/src/agents/index.ts) |
+| Skills 加载与阶段约定 | [skills.ts](backend/src/agents/skills.ts)、[skills/](skills/) |
+| 分镜工具与实体引用校验 | [storyboard-tools.ts](backend/src/agents/tools/storyboard-tools.ts) |
+| 数据模型 | [schema.ts](backend/src/db/schema.ts) |
+| 前端创作工作台 | [frontend/app/pages/](frontend/app/pages/) |
+
+前端使用 Nuxt 3 / Vue，后端使用 Hono / TypeScript，Agent 基于 Mastra，数据通过 Drizzle / SQLite 保存。图像和语音生成由可配置的服务适配器接入。
+
+## 本地运行
+
+准备 Node.js 20+ 和 npm。首次安装需要下载依赖，并可能编译 SQLite 原生模块。
 
 ```bash
-# 启动后端 (默认端口 5679)
-cd backend && npm install && npm run dev
-
-# 启动前端 (默认端口 3013)
-cd ../frontend && npm install && npm run dev
+git clone https://github.com/KingYeon-Zoo/WeiJing-Theater.git
+cd WeiJing-Theater
+cd backend
+npm install
+npm run dev
 ```
-访问 `http://localhost:3013` 开启您的微缩剧场之旅。
 
----
-
-## 🛠️ 部署指南 (Docker)
-
-使用 Docker Compose 一键启动前后端全栈资源：
+在第二个终端，从仓库目录启动前端：
 
 ```bash
-docker-compose up -d
+cd frontend
+npm install
+npm run dev
 ```
-> [!TIP]
-> 配置文件和数据库已通过 `volumes` 映射到本地 `configs/` 和 `data/` 目录，容器重启不会丢失任何剧本素材。
 
----
+访问 `http://localhost:3013`，在设置页配置模型服务与凭证。后端默认端口为 `5679`，健康检查地址为 `http://localhost:5679/api/v1/health`。密钥与模型配置因服务商而异，生成内容前请确认对应配置可用。
 
-<div align="center">
+也可在仓库根目录使用现有 Docker 配置：
 
-  <p>© 2026 Weijing Theater Team. All Rights Reserved.</p>
-</div>
+```bash
+docker compose up -d --build
+```
+
+容器入口为 `http://localhost:5679`，数据挂载见 [docker-compose.yml](docker-compose.yml)。
+
+## 项目资料
+
+- [系统架构与工作流程](docs/contest/enterprise_materials/system_architecture_and_workflow.pdf)
+- [项目概要](docs/contest/project_summary.pdf)
+- [项目演示幻灯片](docs/contest/project_slides.pptx)
+
+这是团队项目的公开仓库。首页展示创作系统与整体演示，代码目录对应各阶段的公开实现。
