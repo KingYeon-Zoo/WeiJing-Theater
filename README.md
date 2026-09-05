@@ -110,3 +110,9 @@ docker compose up -d --build
 - [项目演示幻灯片](docs/contest/project_slides.pptx)
 
 这是团队项目的公开仓库。首页展示创作系统与整体演示，代码目录对应各阶段的公开实现。
+
+## 宣传示意
+
+下图为项目宣传素材，实际运行范围以上方演示及代码说明为准。
+
+![项目宣传示意](docs/images/weijing-theater-poster.png)
