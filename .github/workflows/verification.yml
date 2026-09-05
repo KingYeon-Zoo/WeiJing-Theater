@@ -1,0 +1,26 @@
+name: 构建与兼容检查
+on: [push, pull_request]
+permissions:
+  contents: read
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v6
+      - uses: actions/setup-node@v6
+        with:
+          node-version: 22
+      - name: 后端检查
+        working-directory: backend
+        run: |
+          npm ci
+          npm run typecheck
+          npm run build
+          node --import tsx --test tests/compatibility.test.ts
+          npm audit --audit-level=low
+      - name: 前端检查
+        working-directory: frontend
+        run: |
+          npm ci
+          npm run generate
+          npm audit --audit-level=low
